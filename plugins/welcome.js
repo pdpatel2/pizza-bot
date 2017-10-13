@@ -1,7 +1,7 @@
 module.exports = {
   init: (controller) => {
     controller.hears([/hello bot/], ['direct_message', 'ambient'], (bot, message) => {
-      bot.reply(message, `Howdy! My name is <@${bot.identity.id}>, good to meet you <@${message.user}>.`)
+      bot.reply(message, `Howdy there! My name is <@${bot.identity.id}>, good to meet you <@${message.user}>.`)
     })
   },
   help: {
